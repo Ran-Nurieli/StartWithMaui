@@ -1,58 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
-    x:Class="StartWithMaui.MainPage"
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiFirstApp.MainPage">
 
+    <StackLayout Margin="7,13,7,13" Orientation="Vertical" BackgroundColor="CadetBlue">
+        
+        <!--<Label x:Name="lbl_year"  WidthRequest="300" HeightRequest="100" Margin="10,30,10,20" Text="Goodbey 2023!" BackgroundColor="DarkCyan" 
+               TextColor="Gold" FontSize="22" FontFamily="Pacifico" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
 
-    <VerticalStackLayout Margin="35" Spacing="30">
+        
+        <Image x:Name="img_bot"  Source="dotnet_bot" Margin="0,100,0,0" Aspect="AspectFit" HeightRequest="200"/>
 
-        <Button
-            x:Name="up_btn"
-            BorderColor="Brown"
-            BorderWidth="3"
-            Clicked="ChangePhoto"
-            CornerRadius="40"
-            HeightRequest="80"
-            WidthRequest="80">
-            <Button.ImageSource>
-                <FontImageSource FontFamily="MaterialIcons" Glyph="&#xe5d8;" />
-            </Button.ImageSource>
-            <Button.Shadow>
-                <Shadow
-                    Brush="Black"
-                    Opacity="0.8"
-                    Radius="40"
-                    Offset="20,20" />
-            </Button.Shadow>
+        <Button x:Name="btn_changeText" Clicked="ChangeTextEvent" IsEnabled="True" Text="החלף טקסט" Margin="0,50,0,0" FontFamily="Pacifico" TextColor="Gold" BackgroundColor="DarkCyan" BorderWidth="2" BorderColor="White" HeightRequest="150" WidthRequest="150" FontSize="16" CornerRadius="150"/>-->
 
-        </Button>
-
-
-        <Image
-            x:Name="slide_img"
-            Aspect="AspectFit"
-            HeightRequest="240"
-            Source="dotnet_bot.svg"
-            WidthRequest="240" />
-
-        <Button
-            x:Name="down_btn"
-            BorderColor="Brown"
-            BorderWidth="3"
-            Clicked="ChangePhoto"
-            CornerRadius="40"
-            FontAttributes="Bold"
-            FontFamily="Cinzel"
-            FontSize="Medium"
-            HeightRequest="80"
-            IsEnabled="False"
-            Text="Down"
-            TextColor="White"
-            WidthRequest="80" />
-
-
-    </VerticalStackLayout>
+        <Button x:Name="btn_changeMonkeyImageUp" Clicked="ChangeMonkeyImageUpEvent" IsEnabled="True" Text="למעלה" Margin="0,100,0,0" FontFamily="Pacifico" TextColor="Gold" BackgroundColor="DarkCyan" BorderWidth="2" BorderColor="White" HeightRequest="50" WidthRequest="150" FontSize="13" CornerRadius="150"/> 
+        <Image x:Name="img_monkey" VerticalOptions="Center" Margin="0,100,0,100" Aspect="AspectFit" HeightRequest="200"/>
+        <Button x:Name="btn_changeMonkeyImageDown" Clicked="ChangeMonkeyImageDownEvent" IsEnabled="False" Text="למטה" Margin="0,0,0,0" FontFamily="Pacifico" TextColor="Gold" BackgroundColor="DarkCyan" BorderWidth="2" BorderColor="White" HeightRequest="50" WidthRequest="150" FontSize="13" CornerRadius="150"/>
+    </StackLayout>
 
 
 

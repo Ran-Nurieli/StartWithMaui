@@ -56,6 +56,12 @@
 	  <None Remove="Resources\Splash\logo.svg" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="DynamicMainPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 	
 
 </Project>
